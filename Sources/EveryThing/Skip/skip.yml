@@ -1,0 +1,11 @@
+# Configuration file for https://skip.tools project
+#
+# This skip.yml file is associated with an Android App project,
+# and buiding it will create an installable .apk file.
+#
+# The app's metadata is derived from the top-level
+# ModuleName.xcconfig file, which in turn are used to generate both the
+# AndroidManifest.xml (for the Android apk) and the
+# Info.plist (for the iOS ipa).
+build:
+  contents:
