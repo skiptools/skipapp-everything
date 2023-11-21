@@ -4,17 +4,17 @@
 
 import SwiftUI
 import HelloSkip
-import Showcase
-import SkipWeather
-import LottieDemo
-import DataBake
+//import Showcase
+//import SkipWeather
+//import LottieDemo
+//import DataBake
 
 enum EveryThingType: String, CaseIterable, Identifiable {
     case hello
-    case showcase
-    case lottie
-    case databake
-    case weather
+//    case showcase
+//    case lottie
+//    case databake
+//    case weather
 
     var id: String {
         rawValue
@@ -24,14 +24,14 @@ enum EveryThingType: String, CaseIterable, Identifiable {
         switch self {
         case .hello:
             return "Hello Skip"
-        case .showcase:
-            return "SwiftUI Components"
-        case .lottie:
-            return "Lottie Animations"
-        case .databake:
-            return "Database List"
-        case .weather:
-            return "Weather Sample"
+//        case .showcase:
+//            return "SwiftUI Components"
+//        case .lottie:
+//            return "Lottie Animations"
+//        case .databake:
+//            return "Database List"
+//        case .weather:
+//            return "Weather Sample"
         }
     }
 }
@@ -59,14 +59,14 @@ public struct ContentView: View {
                 EmptyView()
             case .hello:
                 HelloSkip.ContentView()
-            case .showcase:
-                Showcase.ContentView()
-            case .lottie:
-                LottieDemo.ContentView()
-            case .databake:
-                DataBake.ContentView()
-            case .weather:
-                SkipWeather.ContentView()
+//            case .showcase:
+//                Showcase.ContentView()
+//            case .lottie:
+//                LottieDemo.ContentView()
+//            case .databake:
+//                DataBake.ContentView()
+//            case .weather:
+//                SkipWeather.ContentView()
             }
         }
 

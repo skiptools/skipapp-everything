@@ -14,21 +14,19 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://source.skip.tools/skip.git", from: "0.7.16"),
-        .package(url: "https://source.skip.tools/skip-ui.git", from: "0.0.0"),
         .package(url: "https://source.skip.tools/skipapp-hello.git", from: "0.0.0"),
-        .package(url: "https://source.skip.tools/skipapp-showcase.git", from: "0.0.0"),
-        .package(url: "https://source.skip.tools/skipapp-weather.git", from: "0.0.0"),
-        .package(url: "https://source.skip.tools/skipapp-lottiedemo.git", from: "0.0.0"),
-        .package(url: "https://source.skip.tools/skipapp-databake.git", from: "0.0.0"),
+//        .package(url: "https://source.skip.tools/skipapp-showcase.git", from: "0.0.0"),
+//        .package(url: "https://source.skip.tools/skipapp-weather.git", from: "0.0.0"),
+//        .package(url: "https://source.skip.tools/skipapp-lottiedemo.git", from: "0.0.0"),
+//        .package(url: "https://source.skip.tools/skipapp-databake.git", from: "0.0.0"),
     ],
     targets: [
         .target(name: "EveryThing", dependencies: [
-            .product(name: "SkipUI", package: "skip-ui"),
             .product(name: "HelloSkipApp", package: "skipapp-hello"),
-            .product(name: "ShowcaseApp", package: "skipapp-showcase"),
-            .product(name: "SkipWeatherApp", package: "skipapp-weather"),
-            .product(name: "LottieDemoApp", package: "skipapp-lottiedemo"),
-            .product(name: "DataBakeApp", package: "skipapp-databake"),
+//            .product(name: "ShowcaseApp", package: "skipapp-showcase"),
+//            .product(name: "SkipWeatherApp", package: "skipapp-weather"),
+//            .product(name: "LottieDemoApp", package: "skipapp-lottiedemo"),
+//            .product(name: "DataBakeApp", package: "skipapp-databake"),
         ], plugins: [.plugin(name: "skipstone", package: "skip")]),
     ]
 )
