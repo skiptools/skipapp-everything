@@ -3,6 +3,7 @@
 
 pluginManagement {
     repositories {
+        maven("https://maven.skip.tools")
         gradlePluginPortal()
         mavenCentral()
         google()
@@ -11,6 +12,7 @@ pluginManagement {
 
 dependencyResolutionManagement {
     repositories {
+        maven("https://maven.skip.tools")
         mavenCentral()
         google()
     }
