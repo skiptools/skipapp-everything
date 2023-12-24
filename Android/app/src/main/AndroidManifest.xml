@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This AndroidManifest.xml template was generated for the Skip module HelloSkip -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <!-- example permissions for using device location -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
@@ -13,6 +13,7 @@
         android:label="${PRODUCT_NAME}"
         android:name=".AndroidAppMain"
         android:allowBackup="true"
+        tools:replace="android:allowBackup"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
