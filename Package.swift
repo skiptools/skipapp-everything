@@ -58,11 +58,11 @@ let package = Package(
             .product(name: "SkipYAML", package: "skip-yaml"),
             .product(name: "SkipZip", package: "skip-zip"),
 
-//            .product(name: "HelloSkipApp", package: "skipapp-hello"),
-//            .product(name: "ShowcaseApp", package: "skipapp-showcase"),
-//            .product(name: "SkipWeatherApp", package: "skipapp-weather"),
-//            .product(name: "LottieDemoApp", package: "skipapp-lottiedemo"),
-//            .product(name: "DataBakeApp", package: "skipapp-databake"),
+            .product(name: "HelloSkipApp", package: "skipapp-hello"),
+            .product(name: "ShowcaseApp", package: "skipapp-showcase"),
+            .product(name: "SkipWeatherApp", package: "skipapp-weather"),
+            .product(name: "LottieDemoApp", package: "skipapp-lottiedemo"),
+            .product(name: "DataBakeApp", package: "skipapp-databake"),
         ], plugins: [.plugin(name: "skipstone", package: "skip")]),
     ]
 )
