@@ -1,8 +1,5 @@
 // swift-tools-version: 5.9
-// This is free software: you can redistribute and/or modify it
-// under the terms of the GNU Lesser General Public License 3.0
-// as published by the Free Software Foundation https://fsf.org
-
+// SPDX-License-Identifier: LGPL-3.0-only WITH LGPL-3.0-linking-exception
 import PackageDescription
 
 let package = Package(
@@ -13,30 +10,30 @@ let package = Package(
         .library(name: "EveryThingApp", type: .dynamic, targets: ["EveryThing"]),
     ],
     dependencies: [
-        .package(url: "https://source.skip.tools/skip.git", from: "0.8.25"),
-        .package(url: "https://source.skip.tools/skip-ui.git", from: "0.5.19"),
-        .package(url: "https://source.skip.tools/skip-av.git", from: "0.0.2"),
-        .package(url: "https://source.skip.tools/skip-sql.git", from: "0.6.2"),
-        .package(url: "https://source.skip.tools/skip-script.git", from: "0.4.1"),
-        .package(url: "https://source.skip.tools/skip-ffi.git", from: "0.3.2"),
-        .package(url: "https://source.skip.tools/skip-motion.git", from: "0.2.0"),
-        .package(url: "https://source.skip.tools/skip-device.git", from: "0.1.1"),
-        .package(url: "https://source.skip.tools/skip-data.git", from: "0.1.1"),
-        .package(url: "https://source.skip.tools/skip-notify.git", from: "0.1.1"),
-//        .package(url: "https://source.skip.tools/skip-mark.git", from: "0.0.0"),
-        .package(url: "https://source.skip.tools/skip-salt.git", from: "0.0.1"),
-        .package(url: "https://source.skip.tools/skip-proto.git", from: "0.1.0"),
-        .package(url: "https://source.skip.tools/skip-vault.git", from: "0.1.2"),
-        .package(url: "https://source.skip.tools/skip-web.git", from: "0.1.0"),
-        .package(url: "https://source.skip.tools/skip-xml.git", from: "0.1.2"),
-        .package(url: "https://source.skip.tools/skip-yaml.git", from: "0.1.2"),
-        .package(url: "https://source.skip.tools/skip-zip.git", from: "0.3.0"),
+        .package(url: "https://source.skip.tools/skip.git", from: "1.0.0"),
+        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.0.0"),
+        .package(url: "https://source.skip.tools/skip-ffi.git", from: "1.0.0"),
+        .package(url: "https://source.skip.tools/skip-av.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-sql.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-script.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-motion.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-device.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-data.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-notify.git", "0.0.0"..<"2.0.0"),
+//        .package(url: "https://source.skip.tools/skip-mark.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-salt.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-proto.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-vault.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-web.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-xml.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-yaml.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skip-zip.git", "0.0.0"..<"2.0.0"),
 
-        .package(url: "https://source.skip.tools/skipapp-hello.git", from: "0.0.8"),
-        .package(url: "https://source.skip.tools/skipapp-showcase.git", from: "0.3.4"),
-        .package(url: "https://source.skip.tools/skipapp-weather.git", from: "0.4.3"),
-        .package(url: "https://source.skip.tools/skipapp-lottiedemo.git", from: "0.0.5"),
-        .package(url: "https://source.skip.tools/skipapp-databake.git", from: "0.0.7"),
+        .package(url: "https://source.skip.tools/skipapp-hello.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skipapp-showcase.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skipapp-weather.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skipapp-lottiedemo.git", "0.0.0"..<"2.0.0"),
+        .package(url: "https://source.skip.tools/skipapp-databake.git", "0.0.0"..<"2.0.0"),
     ],
     targets: [
         .target(name: "EveryThing", dependencies: [

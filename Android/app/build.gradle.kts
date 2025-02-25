@@ -2,15 +2,12 @@ import java.util.Properties
 
 plugins {
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.android.application)
     id("skip-build-plugin")
 }
 
 skip {
-}
-
-kotlin {
-    jvmToolchain(libs.versions.jvm.get().toInt())
 }
 
 android {
@@ -19,6 +16,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.toVersion(libs.versions.jvm.get())
         targetCompatibility = JavaVersion.toVersion(libs.versions.jvm.get())
+    }
+    kotlinOptions {
+        jvmTarget = libs.versions.jvm.get().toString()
     }
 
     defaultConfig {
@@ -31,11 +31,6 @@ android {
 
     buildFeatures {
         buildConfig = true
-        compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.kotlin.compose.compiler.extension.get()
     }
 
     // default signing configuration tries to load from keystore.properties
